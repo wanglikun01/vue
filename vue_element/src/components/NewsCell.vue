@@ -1,24 +1,25 @@
 <template>
-  <section class="financial-list">
-    <section class="collect" @click="jumpPage">
-      <aside>
-        <h2>{{newsDate.title}}</h2>
-        <section class="Cleft clearfix">
-          <img class="fl" src="./../assets/icon/eyes.png" style="width:0.24rem;height:0.2rem;">
-          <span class="fl">{{newsDate.author_name}}</span>
-        </section>
-        <section class="Cright">
-          <img src="./../assets/icon/clock.png" style="width:0.2rem;height:0.2rem;">
-          <span>{{newsDate.date | getYMD}}</span>
-        </section>
+  <!--<div class="NewsCell">-->
+    <section class="financial-list">
+      <section class="collect" @click="jumpPage">
+        <aside>
+          <h2>{{newsDate.title}}</h2>
+          <section class="Cleft clearfix">
+            <img class="fl" src="./../assets/logo.png" style="width:0.24rem;height:0.2rem;">
+            <span class="fl">{{newsDate.num}}</span>
+          </section>
+          <section class="Cright">
+            <img src="./../assets/logo.png" style="width:0.2rem;height:0.2rem;">
+            <span>{{newsDate.author_name}}</span>
+          </section>
+          <div style="clear: both"></div>
+        </aside>
+        <aside>
+        </aside>
         <div style="clear: both"></div>
-      </aside>
-      <aside>
-        <img :src="newsDate.thumbnail_pic_s" style="border-radius: 0.2rem;">
-      </aside>
-      <div style="clear: both"></div>
+      </section>
     </section>
-  </section>
+  <!--</div>-->
 </template>
 
 <script>
@@ -29,6 +30,7 @@
         },
         data () {
           return {
+            title:123
           }
         },
         computed: {

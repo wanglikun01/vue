@@ -1,5 +1,5 @@
 import axios from 'axios'
-import vue from 'Vue'
+import vue from 'vue'
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 
 // 请求拦截器

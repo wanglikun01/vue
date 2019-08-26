@@ -13,25 +13,27 @@
   import api from './../axios/api.js'
   import NewsCell from './NewsCell.vue'
     export default {
-        name: "hello",
-        data(){
-            return {
-              newsListShow: [],
-            }
-        },
-      components:{
-          NewsCell
+      name: 'index',
+      data () {
+        return {
+          newsListShow: [],
+        }
       },
-      created(){
-          this.setNewsApi()
+      components: {
+        NewsCell
+      },
+      created() {
+        this.setNewsApi();
       },
       methods:{
-          api.JH_news('/news/index','type=top&key=123456')
-          .then(res => {
-            console.log(res);
-            this.newsListShow = res.articles;
-          });
-        }
+        setNewsApi: function() {
+          api.JH_news('/news/index', 'type=top&key=123456')
+            .then(res => {
+              console.log(res);
+              this.newsListShow = res.articles;
+            });
+        },
+      }
     }
 </script>
 

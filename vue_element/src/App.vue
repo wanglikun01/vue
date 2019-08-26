@@ -8,12 +8,12 @@
 
 <script>
   import vheader from '@/components/header/header.vue'
-export default {
-  name: 'App',
-  components:{
-    vheader
+  export default {
+    name: 'App',
+    components:{
+      vheader
+    }
   }
-}
 </script>
 
 <style>

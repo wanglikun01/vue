@@ -2,22 +2,21 @@
   <div class="header">
       <div>{{msg}}</div>
       <div class="name">wecome smile</div>
+    <!--<vhello></vhello>-->
+    <!--<router-view/>-->
   </div>
 </template>
 
 <script>
+  // import vhello from '@/components/hello.vue'
 export default {
   name: 'HelloWorld',
+  // components:{
+  //   vhello
+  // },
   data () {
-    const item = {
-      date: '2016-05-02',
-      name: '王小虎',
-      address: '上海市普陀区金沙江路 1518 弄'
-    };
     return {
       msg: 'Welcome to Your Vue.js App',
-      visible: false,
-      tableData: Array(20).fill(item)
     }
   }
 }
